@@ -1,0 +1,102 @@
+[
+  {
+    "_id": "1",
+    "title": "The Future of E-Commerce: Trends to Watch in 2024",
+    "slug": { "current": "future-of-ecommerce-trends-2024" },
+    "description": "Discover the latest e-commerce trends shaping the future of online shopping, from AI-powered recommendations to sustainable shopping practices.",
+    "mainImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800",
+    "publishedAt": "2024-01-15",
+    "author": { "name": "Sarah Johnson" },
+    "blogcategories": [{ "title": "E-Commerce" }],
+    "excerpt": "E-commerce continues to evolve rapidly. In 2024, we're seeing exciting developments in AI, sustainability, and customer experience that are reshaping how we shop online."
+  },
+  {
+    "_id": "2",
+    "title": "Sustainable Shopping: How to Build an Eco-Friendly Wardrobe",
+    "slug": { "current": "sustainable-shopping-eco-friendly-wardrobe" },
+    "description": "Learn practical tips for building a sustainable wardrobe that's both stylish and environmentally conscious.",
+    "mainImage": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800",
+    "publishedAt": "2024-01-10",
+    "author": { "name": "Michael Chen" },
+    "blogcategories": [{ "title": "Fashion" }],
+    "excerpt": "Building a sustainable wardrobe doesn't mean sacrificing style. Discover how to make conscious fashion choices that benefit both you and the planet."
+  },
+  {
+    "_id": "3",
+    "title": "Tech Gadgets That Will Transform Your Daily Life",
+    "slug": { "current": "tech-gadgets-transform-daily-life" },
+    "description": "Explore the latest tech gadgets that are making everyday tasks easier and more efficient.",
+    "mainImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+    "publishedAt": "2024-01-05",
+    "author": { "name": "Emily Rodriguez" },
+    "blogcategories": [{ "title": "Technology" }],
+    "excerpt": "From smart home devices to wearable tech, discover gadgets that can truly transform how you live and work."
+  },
+  {
+    "_id": "4",
+    "title": "Home Decor Trends: Creating Your Perfect Living Space",
+    "slug": { "current": "home-decor-trends-perfect-living-space" },
+    "description": "Get inspired by the latest home decor trends and learn how to create a living space that reflects your personality.",
+    "mainImage": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800",
+    "publishedAt": "2024-01-01",
+    "author": { "name": "David Thompson" },
+    "blogcategories": [{ "title": "Home & Living" }],
+    "excerpt": "Transform your living space with these inspiring home decor trends that combine style, comfort, and functionality."
+  },
+  {
+    "_id": "5",
+    "title": "Fitness Essentials: Must-Have Gear for Your Home Gym",
+    "slug": { "current": "fitness-essentials-home-gym-gear" },
+    "description": "Build the perfect home gym with these essential fitness equipment recommendations for every budget.",
+    "mainImage": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800",
+    "publishedAt": "2023-12-28",
+    "author": { "name": "Jessica Martinez" },
+    "blogcategories": [{ "title": "Fitness" }],
+    "excerpt": "Create an effective home gym without breaking the bank. Here are the essential pieces of equipment you need to get started."
+  },
+  {
+    "_id": "6",
+    "title": "Smart Shopping Tips: How to Get the Best Deals Online",
+    "slug": { "current": "smart-shopping-tips-best-deals-online" },
+    "description": "Master the art of online shopping with these expert tips for finding the best deals and saving money.",
+    "mainImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800",
+    "publishedAt": "2023-12-25",
+    "author": { "name": "Robert Kim" },
+    "blogcategories": [{ "title": "Shopping Tips" }],
+    "excerpt": "Learn insider secrets to finding the best deals, using coupons effectively, and timing your purchases for maximum savings."
+  },
+  {
+    "_id": "7",
+    "title": "The Art of Minimalist Living: Less is More",
+    "slug": { "current": "art-of-minimalist-living-less-is-more" },
+    "description": "Discover how minimalist living can bring more joy, clarity, and purpose to your daily life.",
+    "mainImage": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800",
+    "publishedAt": "2023-12-20",
+    "author": { "name": "Amanda White" },
+    "blogcategories": [{ "title": "Lifestyle" }],
+    "excerpt": "Embrace minimalism and discover how living with less can lead to a more fulfilling and intentional life."
+  },
+  {
+    "_id": "8",
+    "title": "Gift Guide: Perfect Presents for Every Occasion",
+    "slug": { "current": "gift-guide-perfect-presents-every-occasion" },
+    "description": "Find the perfect gift for any occasion with our comprehensive gift guide featuring thoughtful and unique ideas.",
+    "mainImage": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800",
+    "publishedAt": "2023-12-15",
+    "author": { "name": "Chris Anderson" },
+    "blogcategories": [{ "title": "Gift Ideas" }],
+    "excerpt": "Struggling to find the perfect gift? Our curated guide has thoughtful gift ideas for every person and occasion."
+  },
+  {
+    "_id": "9",
+    "title": "Product Reviews: Top 10 Must-Have Items This Season",
+    "slug": { "current": "product-reviews-top-10-must-have-items" },
+    "description": "Our team reviews the top 10 must-have products that are trending this season and worth your investment.",
+    "mainImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800",
+    "publishedAt": "2023-12-10",
+    "author": { "name": "Lisa Park" },
+    "blogcategories": [{ "title": "Product Reviews" }],
+    "excerpt": "We've tested and reviewed the season's hottest products. Here are our top picks that deliver on quality and value."
+  }
+]
+

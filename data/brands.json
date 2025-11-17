@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "brand1",
+    "title": "TechBrand",
+    "slug": { "current": "techbrand" },
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200"
+  },
+  {
+    "_id": "brand2",
+    "title": "StyleCo",
+    "slug": { "current": "styleco" },
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200"
+  },
+  {
+    "_id": "brand3",
+    "title": "SportWear",
+    "slug": { "current": "sportwear" },
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200"
+  }
+]
+

@@ -1,0 +1,45 @@
+[
+  {
+    "_id": "cat1",
+    "title": "Electronics",
+    "slug": { "current": "electronics" },
+    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=200",
+    "productCount": 6
+  },
+  {
+    "_id": "cat2",
+    "title": "Fashion",
+    "slug": { "current": "fashion" },
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200",
+    "productCount": 6
+  },
+  {
+    "_id": "cat3",
+    "title": "Sports",
+    "slug": { "current": "sports" },
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200",
+    "productCount": 2
+  },
+  {
+    "_id": "cat4",
+    "title": "Home & Living",
+    "slug": { "current": "home-living" },
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=200",
+    "productCount": 0
+  },
+  {
+    "_id": "cat5",
+    "title": "Books",
+    "slug": { "current": "books" },
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=200",
+    "productCount": 0
+  },
+  {
+    "_id": "cat6",
+    "title": "Toys & Games",
+    "slug": { "current": "toys-games" },
+    "image": "https://images.unsplash.com/photo-1553456558-aff63285bdd1?w=200",
+    "productCount": 0
+  }
+]
+

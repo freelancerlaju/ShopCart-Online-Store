@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import { getImageUrl } from "@/lib/image";
 import PriceFormatter from "./PriceFormatter";
+import { ImageSource } from "@/types/product";
 
 interface Order {
   orderNumber?: string;
@@ -29,7 +30,7 @@ interface Order {
     product?: {
       name?: string;
       price?: number;
-      images?: any[];
+      images?: ImageSource[];
     };
     quantity?: number;
   }>;

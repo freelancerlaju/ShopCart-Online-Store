@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import { getImageUrl } from "@/lib/image";
+import { ImageSource } from "@/types/product";
 import dayjs from "dayjs";
 import { Calendar, ChevronLeftIcon, Pencil } from "lucide-react";
 import Image from "next/image";
@@ -8,15 +9,37 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
 
+type BlogCategory = {
+  title?: string;
+};
+
+type BlogAuthor = {
+  name?: string;
+};
+
+type Blog = {
+  _id?: string;
+  title?: string;
+  slug?: { current?: string };
+  mainImage?: ImageSource;
+  body?: string | Record<string, unknown>;
+  publishedAt?: string;
+  blogcategories?: BlogCategory[];
+  author?: BlogAuthor;
+};
+
 const SingleBlogPage = async ({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) => {
-  const { slug } = await params;
+  const { slug } = params;
   // Blog query removed - add your own data source here
-  const blog: any = null;
-  if (!blog) return notFound();
+  const blog: Blog | null = null;
+  if (!blog) {
+    console.warn(`Blog data not found for slug: ${slug}`);
+    return notFound();
+  }
 
   return (
     <div className="py-10">
@@ -83,16 +106,16 @@ const SingleBlogPage = async ({
             </div>
           </div>
         </div>
-        <BlogLeft slug={slug} />
+        <BlogLeft />
       </Container>
     </div>
   );
 };
 
-const BlogLeft = ({ slug }: { slug: string }) => {
+const BlogLeft = () => {
   // Blog queries removed - add your own data source here
-  const categories: any[] = [];
-  const blogs: any[] = [];
+  const categories: Array<{ blogcategories: BlogCategory[] }> = [];
+  const blogs: Blog[] = [];
 
   return (
     <div>
@@ -113,7 +136,7 @@ const BlogLeft = ({ slug }: { slug: string }) => {
       <div className="border border-lightColor p-5 rounded-md mt-10">
         <Title className="text-base">Latest Blogs</Title>
         <div className="space-y-4 mt-4">
-          {blogs?.map((blog: any, index: number) => (
+          {blogs?.map((blog, index) => (
             <Link
               href={`/blog/${blog?.slug?.current}`}
               key={index}

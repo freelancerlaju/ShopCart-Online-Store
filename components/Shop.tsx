@@ -1,6 +1,6 @@
 "use client";
 import { Product } from "@/types/product";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Container from "./Container";
 import Title from "./Title";
 import CategoryList from "./shop/CategoryList";
@@ -10,10 +10,12 @@ import PriceList from "./shop/PriceList";
 import { Loader2 } from "lucide-react";
 import NoProductAvailable from "./NoProductAvailable";
 import ProductCard from "./ProductCard";
+import { Category } from "@/lib/categories";
+import { Brand } from "@/lib/brands";
 
 interface Props {
-  categories: any[];
-  brands: any;
+  categories: Category[];
+  brands: Brand[];
 }
 const Shop = ({ categories, brands }: Props) => {
   const searchParams = useSearchParams();
@@ -28,10 +30,11 @@ const Shop = ({ categories, brands }: Props) => {
     brandParams || null
   );
   const [selectedPrice, setSelectedPrice] = useState<string | null>(null);
-  const fetchProducts = async () => {
+  const fetchProducts = useCallback(async () => {
     setLoading(true);
     try {
-      const { getAllProducts, getProductsByPriceRange, getProductsByCategory, getProductsByBrandSlug } = await import("@/lib/products");
+      const { getAllProducts, getProductsByCategory, getProductsByBrandSlug } =
+        await import("@/lib/products");
       let filtered = getAllProducts();
       
       // Filter by category if selected
@@ -70,11 +73,11 @@ const Shop = ({ categories, brands }: Props) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [selectedBrand, selectedCategory, selectedPrice]);
 
   useEffect(() => {
     fetchProducts();
-  }, [selectedCategory, selectedBrand, selectedPrice]);
+  }, [fetchProducts]);
   return (
     <div className="border-t">
       <Container className="mt-5">

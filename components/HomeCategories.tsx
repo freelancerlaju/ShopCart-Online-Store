@@ -3,14 +3,7 @@ import Title from "./Title";
 import Image from "next/image";
 import { getImageUrl } from "@/lib/image";
 import Link from "next/link";
-
-interface Category {
-  _id?: string;
-  title?: string;
-  slug?: { current?: string };
-  image?: any;
-  productCount?: number;
-}
+import { Category } from "@/lib/categories";
 
 const HomeCategories = ({ categories }: { categories: Category[] }) => {
   return (

@@ -5,10 +5,24 @@ import { getImageUrl } from "@/lib/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import dayjs from "dayjs";
+import { ImageSource } from "@/types/product";
+
+type BlogCategory = {
+  title?: string;
+};
+
+type Blog = {
+  _id?: string;
+  title?: string;
+  slug?: { current?: string };
+  mainImage?: ImageSource;
+  blogcategories?: BlogCategory[];
+  publishedAt?: string;
+};
 
 const LatestBlog = () => {
   // Blog query removed - add your own data source here
-  const blogs: any[] = [];
+  const blogs: Blog[] = [];
   return (
     <div className="mb-10 lg:mb-20">
       <Title>Latest Blog</Title>
@@ -29,7 +43,7 @@ const LatestBlog = () => {
             <div className="bg-shop_light_bg p-5">
               <div className="text-xs flex items-center gap-5">
                 <div className="flex items-center relative group cursor-pointer">
-                  {blog?.blogcategories?.map((item: any, index: number) => (
+                  {blog?.blogcategories?.map((item, index) => (
                     <p
                       key={index}
                       className="font-semibold text-shop_dark_green tracking-wider"

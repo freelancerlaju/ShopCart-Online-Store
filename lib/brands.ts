@@ -1,10 +1,11 @@
 import brandsData from "@/data/brands.json";
+import { ImageSource } from "@/types/product";
 
 export interface Brand {
   _id?: string;
   title?: string;
   slug?: { current?: string };
-  image?: any;
+  image?: ImageSource;
 }
 
 export function getAllBrands(): Brand[] {

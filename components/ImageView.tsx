@@ -3,14 +3,15 @@ import { getImageUrl } from "@/lib/image";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import React, { useState } from "react";
+import { ImageSource } from "@/types/product";
 
 interface Props {
-  images?: Array<any>;
+  images?: ImageSource[];
   isStock?: number | undefined;
 }
 
 const ImageView = ({ images = [], isStock }: Props) => {
-  const [active, setActive] = useState(images[0]);
+  const [active, setActive] = useState<ImageSource | undefined>(images[0]);
 
   if (!images || images.length === 0) {
     return <div className="w-full md:w-1/2">No images available</div>;

@@ -1,10 +1,11 @@
 import categoriesData from "@/data/categories.json";
+import { ImageSource } from "@/types/product";
 
 export interface Category {
   _id?: string;
   title?: string;
   slug?: { current?: string };
-  image?: any;
+  image?: ImageSource;
   productCount?: number;
 }
 

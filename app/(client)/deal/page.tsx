@@ -16,7 +16,8 @@ const DealPage = () => {
             Hot Deals of the Week
           </Title>
           <p className="text-lightColor">
-            Don't miss out on these amazing deals! Limited time offers on selected products.
+            Don&apos;t miss out on these amazing deals! Limited time offers on
+            selected products.
           </p>
         </div>
         
@@ -24,7 +25,7 @@ const DealPage = () => {
           <>
             <div className="mb-6 flex items-center justify-between">
               <p className="text-sm text-lightColor">
-                Showing <span className="font-semibold text-shop_dark_green">{products.length}</span> hot deal{products.length !== 1 ? 's' : ''}
+                Showing <span className="font-semibold text-shop_dark_green">{products.length}</span> hot deal{products.length !== 1 ? "s" : ""}
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">

@@ -1,5 +1,20 @@
 "use client";
 
+import { TableBody, TableCell, TableRow } from "./ui/table";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
+import PriceFormatter from "./PriceFormatter";
+import dayjs from "dayjs";
+import { X } from "lucide-react";
+import { useState } from "react";
+import OrderDetailDialog from "./OrderDetailDialog";
+import toast from "react-hot-toast";
+import { ImageSource } from "@/types/product";
+
 interface Order {
   orderNumber?: string;
   orderDate?: string;
@@ -15,26 +30,12 @@ interface Order {
     product?: {
       name?: string;
       price?: number;
-      images?: any[];
+      images?: ImageSource[];
     };
     quantity?: number;
   }>;
   amountDiscount?: number;
 }
-
-import { TableBody, TableCell, TableRow } from "./ui/table";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "./ui/tooltip";
-import PriceFormatter from "./PriceFormatter";
-import dayjs from "dayjs";
-import { X } from "lucide-react";
-import { useState } from "react";
-import OrderDetailDialog from "./OrderDetailDialog";
-import toast from "react-hot-toast";
 
 const OrdersComponent = ({ orders }: { orders: Order[] }) => {
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);

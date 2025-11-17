@@ -1,3 +1,17 @@
+export type ImageAsset = {
+  url?: string;
+  _ref?: string;
+};
+
+export type ImageValue = {
+  _key?: string;
+  url?: string;
+  asset?: ImageAsset;
+  [key: string]: unknown;
+};
+
+export type ImageSource = string | ImageValue | null | undefined;
+
 export interface Product {
   _id: string;
   name: string;
@@ -7,7 +21,7 @@ export interface Product {
   description?: string;
   price: number;
   discount?: number;
-  images?: any[];
+  images?: ImageSource[];
   variant?: string;
   status?: string;
   stock?: number;

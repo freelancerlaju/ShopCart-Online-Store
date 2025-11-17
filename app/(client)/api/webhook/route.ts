@@ -1,4 +1,3 @@
-import { Metadata } from "@/actions/createCheckoutSession";
 import stripe from "@/lib/stripe";
 import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
